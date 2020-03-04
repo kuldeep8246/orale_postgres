@@ -53,7 +53,7 @@ const createUser = (request, response) => {
       throw error
     }
     console.log("kuldeep   "+results)
-    response.status(201).send(`User added with ID: ${results.insertId}`)
+    response.status(201).send(`User added with ID: ${results.sid}`)
   })
 }
 
